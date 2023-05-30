@@ -1,21 +1,21 @@
 :root {
   --main-color: #2e2f42;
   --second-color: #4d5ae5;
-  --text-color: #434455;
   --hover-color: #404bbf;
 }
 
 body {
   font-family: "Roboto", sans-serif;
+  color: #434455;
   background: #ffffff;
 }
 
-a {
+.link {
   text-decoration: none;
 }
 
-ul {
-  list-style-type: none;
+.list {
+  list-style: none;
 }
 /** ---------------------HEADER------------------ */
 .header {
@@ -23,19 +23,17 @@ ul {
 .header-navigation {
 }
 .header-logo {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--main-color);
+  color: var(--second-color)
 }
 
-.header-logo span {
-  color: var(--second-color);
+.header-logo-part {
+  color: var(--main-color);
 }
 
 .header-menu {
@@ -56,6 +54,7 @@ ul {
 }
 
 .header-address {
+  font-style: normal;
 }
 .header-contacts {
 }
@@ -65,7 +64,6 @@ ul {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--text-color);
 }
 .header-contacts-link:hover,
 .header-contacts-link:focus {
@@ -82,17 +80,16 @@ ul {
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
-  text-align: center;
   letter-spacing: 0.02em;
   color: #ffffff;
 }
 
 .hero-btn {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.5px;
+  line-height: 1.5;
   letter-spacing: 0.04em;
   color: #ffffff;
   background: var(--second-color);
@@ -127,7 +124,6 @@ ul {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--text-color);
 }
 
 /** ---------------------TASK------------------ */
@@ -139,7 +135,6 @@ ul {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
-  text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--main-color);
@@ -161,7 +156,6 @@ ul {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
-  text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--main-color);
@@ -171,13 +165,13 @@ ul {
 }
 
 .team-list-item {
+  background-color: #ffffff;
 }
 
 .team-list-subtitle {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  text-align: center;
   letter-spacing: 0.02em;
   color: var(--main-color);
 }
@@ -185,9 +179,7 @@ ul {
 .team-list-text {
   font-size: 16px;
   line-height: 1.5;
-  text-align: center;
   letter-spacing: 0.02em;
-  color: var(--text-color);
 }
 
 /** ---------------------FOOTER------------------ */
@@ -197,19 +189,17 @@ ul {
 }
 
 .footer-logo {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #f4f4fd;
+  color: var(--second-color);
 }
 
-.footer-logo span {
-  color: var(--second-color);
+.footer-logo-part {
+  color: #f4f4fd ;
 }
 
 .footer-text {
@@ -224,35 +214,36 @@ ul {
 .projects {
 }
 
-.projects-list {
+.projects-menu {
 }
 
-.projects-list-item {
+.projects-menu-item {
 }
 
-.projects-list-btn {
+.projects-menu-btn {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--second-color);
+  background-color: #F4F4FD;
   cursor: pointer;
 }
 
-.projects-list-btn:hover,
-.projects-list-btn:focus {
+.projects-menu-btn:hover,
+.projects-menu-btn:focus {
   background-color: var(--hover-color);
   color: #ffffff;
 }
 
-.projects-catalog {
+.projects-list {
 }
 
-.projects-catalog-item {
+.projects-list-item {
 }
 
-.projects-catalog-subtitle {
+.projects-list-subtitle {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -260,9 +251,8 @@ ul {
   color: var(--main-color);
 }
 
-.projects-catalog-text {
+.projects-list-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--text-color);
 }
